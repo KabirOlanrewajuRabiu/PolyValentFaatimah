@@ -1,0 +1,639 @@
+/*-- Home Page Style --*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+header {
+    width: 100%;
+   position: fixed;
+}
+
+#follow-us {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:  #0F52BA;
+    padding: 8px 60px;
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+#follow-us p {
+    font-size: 0.8em;
+}
+
+#social-top ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#social-top ul a {
+    color: #ffffff;
+    padding: 0px 5px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background: rgb(240, 239, 239);
+    width: 100%;
+    opacity: .9;
+}
+
+#logo {
+    margin-right: 120px;
+}
+
+#logo h3 {
+    font-weight: 900;
+    font-size: larger;
+}
+
+#logo a {
+    font-weight: bolder;
+    text-decoration: none;
+    color: #0F52BA;
+    font-size: 1.2em;
+    width: 15%;
+    margin-bottom: 0px;
+}
+
+#menu {
+    width: 60%
+}
+
+#menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+#menu ul li {
+    position: relative;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    font-size: 0.9em;
+    color: rgb(49, 49, 49);
+    padding-bottom: 30px;
+}
+
+#menu ul li ul {
+    display: none;
+    position: absolute;
+    background: #ffffff;
+}
+
+#menu ul li a:hover {
+    text-decoration: underline;
+    color: #0F52BA;
+}
+
+#menu ul li:hover ul {
+    display: block;
+    margin-top: 25px;
+}
+
+#menu ul li ul li {
+    padding: 5px;
+    width: 180px;
+}
+
+#menu ul li ul li a {
+    text-decoration: none;
+}
+
+#cart-search a {
+    width: 20%;
+    padding: 0px 10px;
+}
+
+.hero {
+    margin: auto;
+    background: rgb(240, 239, 239);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 150px 30px;
+}
+
+#hero-left {
+   width: 40%;
+   text-align: center;
+}
+
+#hero-right {
+    width: 60%;
+    margin-left: 100px;
+}
+
+#hero-right img {
+    margin: 5px;
+}
+
+#hero-h1 {
+    font-size: 3em;
+}
+
+#hero-paragraph {
+    margin: 20px 0px;
+    line-height: 1.5em;
+}
+
+.hero button {
+    color: #ffffff;
+    background: #0F52BA;
+    padding: 10px 25px;
+    font-weight: bolder;
+    font-size: 1.1em;
+    margin-top: 30px;
+}
+
+.hero button:hover {
+    color:#0F52BA;
+    background: #ffffff;
+}
+
+.polyvalentNurse {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px;
+}
+
+.polyvalentNurse .text {
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+}
+
+.polyvalentNurse .text h1, h5, p {
+    text-align: center;
+}
+
+.polyvalentNurse .text h1 {
+    margin: 30px 0px;
+}
+
+.polyvalentNurse .text h5 {
+   letter-spacing: 10px;
+}
+
+.polyvalentNurse .pics {
+    width: 50%;
+    margin-left: 30px;
+}
+
+.polyvalentNurse .pics .image {
+    margin: 5px;
+}
+
+.whatWeDo {
+    background: rgb(240, 239, 239);
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.whatWeDo h5 {
+    letter-spacing: 10px;
+    padding-top: 100px;
+}
+
+.whatWeDo h1 {
+    margin: 50px;
+}
+
+.whatWeDo .cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+}
+
+.whatWeDo .cards #nursingCare {
+    background: #ffffff;
+    width: 320px;
+    height: 500px;
+    padding: 10px;
+}
+
+.whatWeDo .cards #nursingCare img {
+    width: 300px;
+    height: 200px;
+}
+
+.whatWeDo .cards #nursingCare h3 {
+    margin: 30px;
+    text-align: left;
+}
+
+.whatWeDo .cards #nursingCare p {
+    text-align: left;
+    line-height: 40px;
+}
+
+.whatWeDo .cards #edibles {
+    background: #ffffff;
+    width: 320px;
+    height: 500px;
+    padding: 10px;
+}
+
+.whatWeDo .cards #edibles img {
+    width: 300px;
+    height: 200px;
+}
+
+.whatWeDo .cards #edibles h3 {
+    margin: 30px;
+    text-align: left;
+}
+
+.whatWeDo .cards #edibles p {
+    text-align: left;
+    line-height: 40px;
+}
+
+.whatWeDo .cards #tailoring {
+    background: #ffffff;
+    width: 320px;
+    height: 500px;
+    padding: 10px;  
+}
+
+.whatWeDo .cards #tailoring img {
+    width: 300px;
+    height: 200px;
+}
+
+.whatWeDo .cards #tailoring h3 {
+    margin: 30px;
+    text-align: left;
+}
+
+.whatWeDo .cards #tailoring p {
+    text-align: left;
+    line-height: 40px;
+}
+
+#middle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 50px 30px 50px;
+    color: rgb(101, 99, 99);
+}
+
+#contact-list img {
+    width: 20px;
+    height: 20px;
+    color: rgb(101, 99, 99);
+}
+
+#logo-para {
+    width: 40%;
+    padding: 0px 50px 0px 50px;
+}
+
+#logo-para p {
+    line-height: 2em;
+    margin-top: 20px;
+    text-align: left;
+}
+
+#quicklink {
+    width: 30%;    
+}
+
+#quick-list ul {
+    list-style: none;
+}
+
+#quick-list ul li a {
+    text-decoration: none;
+    color: rgb(101, 99, 99);
+}
+
+#quick-list ul li {
+    margin: 25px 0px;
+}
+
+#contact-list ul li {
+    margin: 15px 0px;
+}
+
+#contact-social ul {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+#contact-social ul a {
+    color: #ffffff;
+    padding: 10px 12px;
+    margin: 0px 5px;
+    background: rgb(80, 79, 79);
+}
+
+#contact-social ul a:hover {
+    background: #0F52BA;
+}
+
+#contact-list ul, #contact-social ul {
+    list-style: none;
+}
+
+#quick-list ul li a:hover {
+    color: black;
+}
+
+#contact-list ul img, #contact-social ul a {
+    text-decoration: none;
+}
+
+#contact {
+    width: 30%;
+}
+
+#lower {
+    background: rgb(21, 20, 20);
+    text-align: center;
+    color: #ffffff;
+    padding: 12px;
+    font-size: 0.8em;
+}
+
+
+
+
+/*-- About Page Style --*/
+
+.about-hero {
+    margin: auto;
+    background: rgb(240, 239, 239);
+    height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 30px;
+}
+
+#about-hero-text {
+    width: 40%;
+    text-align: center;
+ }
+
+ #about-hero-text h1 {
+    margin: 50px 0px;
+    font-size: 3em;
+ }
+
+ #about-hero-text h5 {
+    letter-spacing: 10px;
+ }
+
+ #about-hero-image {
+    width: 60%;
+    margin-left: 100px;
+}
+
+#about-hero-image img {
+    margin: 5px;
+}
+
+#about-hero-paragraph {
+    margin: 20px 0px;
+    line-height: 1.5em;
+}
+
+.vision, .mission {
+    height: 300px;
+    background-color: rgb(156, 151, 151);
+    color: #ffffff;
+    margin: auto;
+    padding: 50px 400px;
+    text-align: center;
+    border-bottom: 1px solid rgb(5, 5, 5);
+}
+
+
+
+/*-- Sevices Page Style --*/
+
+.serviceNurse {
+    margin: auto;
+    background: rgb(240, 239, 239);
+    height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 30px;
+}
+
+#serviceNurse-text {
+    width: 40%;
+    text-align: center;
+ }
+
+ #serviceNurse-text h1 {
+    margin: 50px 0px;
+    font-size: 3em;
+ }
+
+ #serviceNurse-image {
+    width: 60%;
+    margin-left: 100px;
+}
+
+#serviceNurse-image img {
+    margin: 5px;
+}
+
+.serviceNurse button {
+    color: #ffffff;
+    background: #0F52BA;
+    padding: 10px 25px;
+    font-weight: bolder;
+    font-size: 1.1em;
+    margin-top: 30px;
+}
+
+.serviceNurse button:hover {
+    color:#0F52BA;
+    background: #ffffff;
+}
+
+
+
+
+
+
+.serviceEdibles {
+    margin: auto;
+    background: rgb(240, 239, 239);
+    height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 30px;
+}
+
+#serviceEdibles-text {
+    width: 40%;
+    text-align: center;
+ }
+
+ #serviceEdibles-text h1 {
+    margin: 50px 0px;
+    font-size: 3em;
+ }
+
+ #serviceEdibles-image {
+    width: 60%;
+    margin-left: 100px;
+}
+
+#serviceEdibles-image img {
+    margin: 5px;
+}
+
+.serviceEdibles button {
+    color: #ffffff;
+    background: #0F52BA;
+    padding: 10px 25px;
+    font-weight: bolder;
+    font-size: 1.1em;
+    margin-top: 30px;
+}
+
+.serviceEdibles button:hover {
+    color:#0F52BA;
+    background: #ffffff;
+}
+
+
+
+
+
+
+.serviceTailoring {
+    margin: auto;
+    background: rgb(240, 239, 239);
+    height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 30px;
+}
+
+#serviceTailoring-text {
+    width: 40%;
+    text-align: center;
+ }
+
+ #serviceTailoring-text h1 {
+    margin: 50px 0px;
+    font-size: 3em;
+ }
+
+ #serviceTailoring-image {
+    width: 60%;
+    margin-left: 100px;
+}
+
+#serviceTailoring-image img {
+    margin: 5px;
+}
+
+.serviceTailoring button {
+    color: #ffffff;
+    background: #0F52BA;
+    padding: 10px 25px;
+    font-weight: bolder;
+    font-size: 1.1em;
+    margin-top: 30px;
+}
+
+.serviceTailoring button:hover {
+    color:#0F52BA;
+    background: #ffffff;
+}
+
+
+/*-- Contact Page Style --*/
+
+.contact {
+    margin: auto;
+    background: rgb(240, 239, 239);
+    height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 30px;
+}
+
+#contact-text {
+    width: 40%;
+    text-align: center;
+ }
+
+ #contact-text h1 {
+    margin: 50px 0px;
+    font-size: 3em;
+ }
+
+ #contact-text h5 {
+    letter-spacing: 10px;
+ }
+
+ #contact-image {
+    width: 60%;
+    margin-left: 100px;
+}
+
+#contact-image img {
+    margin: 0px;
+}
+
+.contact button {
+    color: #ffffff;
+    background: #0F52BA;
+    padding: 10px 25px;
+    font-weight: bolder;
+    font-size: 1.1em;
+    margin-top: 30px;
+}
+
+.contact button:hover {
+    color:#0F52BA;
+    background: #ffffff;
+}
