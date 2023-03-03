@@ -25,7 +25,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 20px 60px;
-    background: rgb(240, 239, 239);
+    background: rgba(7, 7, 7, 0.8);
     width: 100%;
     opacity: .9;
 }
@@ -42,7 +42,7 @@ nav {
 #logo a {
     font-weight: bolder;
     text-decoration: none;
-    color: #0F52BA;
+    color: #ffffff;
     font-size: 1.2em;
     width: 15%;
     margin-bottom: 0px;
@@ -66,7 +66,7 @@ nav {
 #menu ul li a {
     text-decoration: none;
     font-size: 0.9em;
-    color: rgb(49, 49, 49);
+    color: #ffffff;
     padding-bottom: 30px;
 }
 
@@ -78,7 +78,7 @@ nav {
 
 #menu ul li a:hover {
     text-decoration: underline;
-    color: #0F52BA;
+    color: #01122c;
 }
 
 #menu ul li:hover ul {
@@ -291,6 +291,10 @@ nav {
 #logo-para {
     width: 40%;
     padding: 0px 50px 0px 50px;
+}
+
+#logo-para #logo a {
+    color: #0F52BA;
 }
 
 #logo-para p {
