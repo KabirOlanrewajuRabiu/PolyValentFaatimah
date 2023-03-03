@@ -17,33 +17,7 @@ body {
 
 header {
     width: 100%;
-   position: fixed;
-}
-
-#follow-us {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background:  #0F52BA;
-    padding: 8px 60px;
-    color: #ffffff;
-    opacity: 0.9;
-}
-
-#follow-us p {
-    font-size: 0.8em;
-}
-
-#social-top ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-}
-
-#social-top ul a {
-    color: #ffffff;
-    padding: 0px 5px;
+    position: fixed;
 }
 
 nav {
