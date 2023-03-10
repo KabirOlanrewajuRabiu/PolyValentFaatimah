@@ -136,10 +136,12 @@ nav {
 .hero button {
     color: #ffffff;
     background: #0F52BA;
-    padding: 10px 25px;
+    padding: 10px 50px;
     font-weight: bolder;
     font-size: 1.1em;
     margin-top: 30px;
+    border: none;
+    border-radius: 30px;
 }
 
 .hero button:hover {
@@ -647,6 +649,7 @@ form button {
     border: none;
     border-radius: 30px;
     margin: 10px 0px;
+    font-weight: bolder;
 }
 
 form button:hover {
