@@ -18,16 +18,16 @@ body {
 header {
     width: 100%;
     position: fixed;
+    top: 0;
 }
 
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 60px;
-    background: rgba(7, 7, 7, 0.8);
+    padding: 15px 30px;
+    background: rgba(7, 7, 7, 0.6);
     width: 100%;
-    opacity: .9;
 }
 
 #logo {
@@ -48,56 +48,27 @@ nav {
     margin-bottom: 0px;
 }
 
-#menu {
-    width: 60%
-}
-
-#menu ul {
+#menu .nav-menu {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     list-style: none;
+    gap: 50px;
 }
 
-#menu ul li {
+#menu .nav-item {
     position: relative;
 }
 
-#menu ul li a {
+#menu .nav-link {
     text-decoration: none;
     font-size: 0.9em;
     color: #ffffff;
     padding-bottom: 30px;
 }
 
-#menu ul li ul {
-    display: none;
-    position: absolute;
-    background: #ffffff;
-}
-
-#menu ul li a:hover {
+#menu .nav-link:hover {
     text-decoration: underline;
     color: #01122c;
-}
-
-#menu ul li:hover ul {
-    display: block;
-    margin-top: 25px;
-}
-
-#menu ul li ul li {
-    padding: 5px;
-    width: 180px;
-}
-
-#menu ul li ul li a {
-    text-decoration: none;
-}
-
-#cart-search a {
-    width: 20%;
-    padding: 0px 10px;
 }
 
 .hero {
@@ -111,13 +82,16 @@ nav {
 }
 
 #hero-left {
-   width: 40%;
+   width: 50%;
    text-align: center;
 }
 
 #hero-right {
-    width: 60%;
-    margin-left: 100px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 #hero-right img {
@@ -147,6 +121,7 @@ nav {
 .hero button:hover {
     color:#0F52BA;
     background: #ffffff;
+    transition: all 0.5s ease-out;
 }
 
 .polyvalentNurse {
@@ -655,4 +630,164 @@ form button {
 form button:hover {
     background-color: white;
     color: #0F52BA;
+}
+
+
+
+
+
+
+/* Mobile */
+
+@media  screen and (max-width: 600px) {
+    header {
+        width: 100%;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: white;
+    }
+    
+    .nav-menu {
+        background: rgba(7, 7, 7, 0.6);
+        position: fixed;
+        right: -100%;
+        top: 60px;
+        gap: 0;
+        flex-direction: column;
+        width: 40%;
+        height: 100vh;
+        text-align: center;
+        justify-content: flex-start;
+        transition: 0.5s;
+    }
+
+    .nav-item {
+        margin: 5px auto;
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .hero {
+        flex-direction:column-reverse;
+        padding: 100px 10px;
+    }
+    
+    #hero-left {
+       width: 100%;
+    }
+    
+    #hero-right {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    #hero-h1 {
+        font-size: 2.5em;
+    }
+    
+    #hero-paragraph {
+        padding: 0 30px;
+        line-height: 1.5em;
+    }
+}
+
+
+
+/* Tablet/iPad */
+
+@media  screen and (max-width: 900px) and (min-width: 601px) {
+
+        header {
+            width: 100%;
+        }
+
+        .hamburger {
+            display: block;
+        }
+    
+        .hamburger.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+    
+        .hamburger.active .bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+    
+        .hamburger.active .bar:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+    
+        .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            background-color: white;
+        }
+        
+        .nav-menu {
+            background: rgba(7, 7, 7, 0.6);
+            position: fixed;
+            right: -100%;
+            top: 60px;
+            gap: 0;
+            flex-direction: column;
+            width: 40%;
+            height: 100vh;
+            text-align: center;
+            justify-content: flex-start;
+            transition: 0.5s;
+        }
+    
+        .nav-item {
+            margin: 10px auto;
+        }
+    
+        .nav-menu.active {
+            left: 0;
+        }
+
+        .hero {
+            padding: 100px 10px;
+        }
+        
+        #hero-left {
+           width: 50%;
+        }
+        
+        #hero-right {
+            width: 50%;
+            margin-bottom: 30px;
+        }
+        
+        #hero-paragraph {
+            padding: 10px;
+        }
 }
