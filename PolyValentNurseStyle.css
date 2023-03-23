@@ -125,22 +125,17 @@ nav {
 }
 
 .polyvalentNurse {
-    width: 80%;
-    margin: auto;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 100px;
+    margin: 100px 0;
 }
 
 .polyvalentNurse .text {
-    width: 50%;
+    width: 40%;
     text-align: center;
-    padding: 10px;
-}
-
-.polyvalentNurse .text h1, h5, p {
-    text-align: center;
+    padding: 20px;
 }
 
 .polyvalentNurse .text h1 {
@@ -148,15 +143,20 @@ nav {
 }
 
 .polyvalentNurse .text h5 {
-   letter-spacing: 10px;
+   letter-spacing: 5px;
 }
 
 .polyvalentNurse .pics {
-    width: 50%;
-    margin-left: 30px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .polyvalentNurse .pics .image {
+    width: 250px;
+    height: 250px;
     margin: 5px;
 }
 
@@ -714,6 +714,25 @@ form button:hover {
         padding: 0 30px;
         line-height: 1.5em;
     }
+
+    .polyvalentNurse {
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+    
+    .polyvalentNurse .text {
+        width: 100%;
+    }
+    
+    .polyvalentNurse .pics {
+        width: 100%;
+    }
+    
+    .polyvalentNurse .pics .image {
+        width: 200px;
+        height: 200px;
+        margin: 3px;
+    }
 }
 
 
@@ -789,5 +808,24 @@ form button:hover {
         
         #hero-paragraph {
             padding: 10px;
+        }
+
+        .polyvalentNurse {
+            flex-direction: column-reverse;
+            margin: 50px 0;
+        }
+        
+        .polyvalentNurse .text {
+            width: 100%;
+        }
+        
+        .polyvalentNurse .pics {
+            width: 100%;
+        }
+        
+        .polyvalentNurse .pics .image {
+            width: 200px;
+            height: 200px;
+            margin: 3px;
         }
 }
