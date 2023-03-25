@@ -95,6 +95,8 @@ nav {
 }
 
 #hero-right img {
+    width: 40%; 
+    height: 180px;
     margin: 5px;
 }
 
@@ -173,78 +175,49 @@ nav {
 }
 
 .whatWeDo h1 {
-    margin: 50px;
+    margin: 50px 0;
 }
 
 .whatWeDo .cards {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 20px 100px;
+    padding: 30px;
 }
 
-.whatWeDo .cards #nursingCare {
-    background: #ffffff;
-    width: 320px;
-    height: 500px;
-    padding: 10px;
-}
-
-.whatWeDo .cards #nursingCare img {
-    width: 300px;
-    height: 200px;
-}
-
-.whatWeDo .cards #nursingCare h3 {
-    margin: 30px;
-    text-align: left;
-}
-
-.whatWeDo .cards #nursingCare p {
-    text-align: left;
-    line-height: 40px;
-}
-
-.whatWeDo .cards #edibles {
-    background: #ffffff;
-    width: 320px;
-    height: 500px;
-    padding: 10px;
-}
-
-.whatWeDo .cards #edibles img {
-    width: 300px;
-    height: 200px;
-}
-
-.whatWeDo .cards #edibles h3 {
-    margin: 30px;
-    text-align: left;
-}
-
-.whatWeDo .cards #edibles p {
-    text-align: left;
-    line-height: 40px;
-}
-
+.whatWeDo .cards #nursingCare,
+.whatWeDo .cards #edibles,
 .whatWeDo .cards #tailoring {
     background: #ffffff;
-    width: 320px;
-    height: 500px;
-    padding: 10px;  
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: normal;
+    padding: 10px;
+    margin: 25px;
 }
 
+.whatWeDo .cards #nursingCare img,
+.whatWeDo .cards #edibles img,
 .whatWeDo .cards #tailoring img {
-    width: 300px;
-    height: 200px;
+    width: 100%;
+    height: 220px;
 }
 
-.whatWeDo .cards #tailoring h3 {
-    margin: 30px;
+.whatWeDo .cards #nursingCare h3,
+.whatWeDo .cards #edibles h3,
+.whatWeDo .cards #tailoring h3  {
+    margin: 30px 0;
     text-align: left;
+    height: 50px;
 }
 
+.whatWeDo .cards #nursingCare p,
+.whatWeDo .cards #edibles p,
 .whatWeDo .cards #tailoring p {
     text-align: left;
     line-height: 40px;
@@ -254,63 +227,38 @@ nav {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 70px 50px 30px 50px;
+    justify-content: space-around;
+    padding: 70px 30px;
     color: rgb(101, 99, 99);
 }
 
+#contact-list ul {
+    display: flex;
+    gap: 50px;
+}
+
 #contact-list img {
+    text-decoration: none;
     width: 20px;
     height: 20px;
     color: rgb(101, 99, 99);
 }
 
-#logo-para {
-    width: 40%;
-    padding: 0px 50px 0px 50px;
-}
-
-#logo-para #logo a {
-    color: #0F52BA;
-}
-
-#logo-para p {
-    line-height: 2em;
-    margin-top: 20px;
-    text-align: left;
-}
-
-#quicklink {
-    width: 30%;    
-}
-
-#quick-list ul {
-    list-style: none;
-}
-
-#quick-list ul li a {
-    text-decoration: none;
-    color: rgb(101, 99, 99);
-}
-
-#quick-list ul li {
-    margin: 25px 0px;
-}
-
 #contact-list ul li {
-    margin: 15px 0px;
+    margin: 50px 0px;
 }
 
 #contact-social ul {
     display: flex;
     align-items: center;
-    margin-top: 40px;
+    gap: 150px;
 }
 
 #contact-social ul a {
+    text-decoration: none;
     color: #ffffff;
     padding: 10px 12px;
-    margin: 0px 5px;
+    margin: 50px 5px;
     background: rgb(80, 79, 79);
 }
 
@@ -320,18 +268,6 @@ nav {
 
 #contact-list ul, #contact-social ul {
     list-style: none;
-}
-
-#quick-list ul li a:hover {
-    color: black;
-}
-
-#contact-list ul img, #contact-social ul a {
-    text-decoration: none;
-}
-
-#contact {
-    width: 30%;
 }
 
 #lower {
@@ -350,17 +286,16 @@ nav {
 .about-hero {
     margin: auto;
     background: rgb(240, 239, 239);
-    height: 600px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 30px 30px;
+    padding: 150px 30px;
 }
 
 #about-hero-text {
-    width: 40%;
-    text-align: center;
+    width: 50%;
+   text-align: center;
  }
 
  #about-hero-text h1 {
@@ -373,8 +308,11 @@ nav {
  }
 
  #about-hero-image {
-    width: 60%;
-    margin-left: 100px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 #about-hero-image img {
@@ -391,7 +329,7 @@ nav {
     background-color: rgb(156, 151, 151);
     color: #ffffff;
     margin: auto;
-    padding: 50px 400px;
+    padding: 50px 250px;
     text-align: center;
     border-bottom: 1px solid rgb(5, 5, 5);
 }
@@ -400,147 +338,48 @@ nav {
 
 /*-- Sevices Page Style --*/
 
-.serviceNurse {
-    margin: auto;
-    background: rgb(240, 239, 239);
-    height: 600px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 30px 30px;
-}
-
-#serviceNurse-text {
-    width: 40%;
-    text-align: center;
- }
-
- #serviceNurse-text h1 {
-    margin: 50px 0px;
-    font-size: 3em;
- }
-
- #serviceNurse-image {
-    width: 60%;
-    margin-left: 100px;
-}
-
-#serviceNurse-image img {
-    margin: 5px;
-}
-
-.serviceNurse button {
-    color: #ffffff;
-    background: #0F52BA;
-    padding: 10px 25px;
-    font-weight: bolder;
-    font-size: 1.1em;
-    margin-top: 30px;
-}
-
-.serviceNurse button:hover {
-    color:#0F52BA;
-    background: #ffffff;
-}
-
-
-
-
-
-
-.serviceEdibles {
-    margin: auto;
-    background: rgb(240, 239, 239);
-    height: 600px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 30px 30px;
-}
-
-#serviceEdibles-text {
-    width: 40%;
-    text-align: center;
- }
-
- #serviceEdibles-text h1 {
-    margin: 50px 0px;
-    font-size: 3em;
- }
-
- #serviceEdibles-image {
-    width: 60%;
-    margin-left: 100px;
-}
-
-#serviceEdibles-image img {
-    margin: 5px;
-}
-
-.serviceEdibles button {
-    color: #ffffff;
-    background: #0F52BA;
-    padding: 10px 25px;
-    font-weight: bolder;
-    font-size: 1.1em;
-    margin-top: 30px;
-}
-
-.serviceEdibles button:hover {
-    color:#0F52BA;
-    background: #ffffff;
-}
-
-
-
-
-
-
+.serviceNurse,
+.serviceEdibles,
 .serviceTailoring {
     margin: auto;
     background: rgb(240, 239, 239);
-    height: 600px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 30px 30px;
+    padding: 100px 30px;
 }
 
+#serviceNurse-text,
+#serviceEdibles-text,
 #serviceTailoring-text {
     width: 40%;
     text-align: center;
  }
 
+ #serviceNurse-text h1,
+ #serviceEdibles-text h1,
  #serviceTailoring-text h1 {
     margin: 50px 0px;
     font-size: 3em;
  }
 
+ #serviceNurse-image,
+ #serviceEdibles-image,
  #serviceTailoring-image {
     width: 60%;
-    margin-left: 100px;
+    margin-left: 40px;
 }
 
+#serviceNurse-image img,
+#serviceEdibles-image img,
 #serviceTailoring-image img {
+    width: 200px;
+    height: 200px;
     margin: 5px;
 }
 
-.serviceTailoring button {
-    color: #ffffff;
-    background: #0F52BA;
-    padding: 10px 25px;
-    font-weight: bolder;
-    font-size: 1.1em;
-    margin-top: 30px;
-}
 
-.serviceTailoring button:hover {
-    color:#0F52BA;
-    background: #ffffff;
-}
 
 
 /*-- Contact Page Style --*/
@@ -630,9 +469,8 @@ form button {
 form button:hover {
     background-color: white;
     color: #0F52BA;
+    transition: all 0.3s ease-in-out;
 }
-
-
 
 
 
@@ -696,7 +534,7 @@ form button:hover {
         flex-direction:column-reverse;
         padding: 100px 10px;
     }
-    
+
     #hero-left {
        width: 100%;
     }
@@ -732,6 +570,167 @@ form button:hover {
         width: 200px;
         height: 200px;
         margin: 3px;
+    }
+    
+    .whatWeDo .cards {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .whatWeDo h1 {
+        margin: 30px 20px;
+    }
+    
+    .whatWeDo .cards #nursingCare,
+    .whatWeDo .cards #edibles,
+    .whatWeDo .cards #tailoring {
+        width: 100%;
+        margin-left: auto;
+    }
+    
+    .whatWeDo .cards #nursingCare img,
+    .whatWeDo .cards #edibles img,
+    .whatWeDo .cards #tailoring img {
+        width: 100%;
+        height: 300px;
+    }
+    
+    .whatWeDo .cards #nursingCare p,
+    .whatWeDo .cards #edibles p,
+    .whatWeDo .cards #tailoring p  {
+        padding: 20px 0;
+    }
+
+    .serviceNurse,
+    .serviceTailoring {
+        margin: auto;
+        flex-direction: column-reverse;
+        padding: 50px 20px;
+    }
+
+    .serviceEdibles {
+        margin: auto;
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+
+    #serviceNurse-text,
+    #serviceEdibles-text,
+    #serviceTailoring-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    #serviceNurse-text h1,
+    #serviceEdibles-text h1,
+    #serviceTailoring-text h1 {
+        margin: 50px 0px;
+        font-size: 2.5em;
+    }
+
+    #serviceNurse-text p,
+    #serviceEdibles-text p,
+    #serviceTailoring-text p {
+        margin: 50px;
+    }
+
+    #serviceNurse-image,
+    #serviceEdibles-image,
+    #serviceTailoring-image {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #serviceNurse-image img,
+    #serviceEdibles-image img,
+    #serviceTailoring-image img {
+        width: 200px;
+        height: 200px;
+        margin: 5px;
+    }
+
+    #contact h1 {
+        margin-bottom: 30px;
+    }
+    
+    #contact-list ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    #contact-social ul {
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    #contact-list ul li {
+        margin: 10px 0px;
+    }
+
+    .about-hero {
+        flex-direction:column-reverse;
+        padding: 100px 10px;
+    }
+
+    #about-hero-image {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #about-hero-text {
+        width: 100%;
+    }
+
+    .vision, .mission {
+        padding: 50px;
+    }
+
+    .contact {
+        flex-direction: column-reverse;
+        margin-top: 50px;
+    }
+    
+    #contact-text {
+        width: 100%;
+        text-align: center;
+     }
+    
+     #contact-image {
+        width: 100%;
+        display: flex;
+        margin: auto;
+    }
+    
+    #contact-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #contact-text h5 {
+        padding-top: 30px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+    }
+    
+    #form {
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    form input {
+        width: 100%;
+    }
+    
+    form button {
+        width: 50%;
     }
 }
 
@@ -827,5 +826,154 @@ form button:hover {
             width: 200px;
             height: 200px;
             margin: 3px;
+        }
+
+        .whatWeDo .cards {
+            flex-wrap: wrap;
+            padding: 30px;
+        }
+
+        .whatWeDo h1 {
+            margin: 20px;
+        }
+        
+        .whatWeDo .cards #nursingCare,
+        .whatWeDo .cards #edibles,
+        .whatWeDo .cards #tailoring {
+            width: 45%;
+            margin: 10px;
+        }
+        
+        .whatWeDo .cards #nursingCare img,
+        .whatWeDo .cards #edibles img,
+        .whatWeDo .cards #tailoring img {
+            width: 100%;
+            height: 300px;
+        }
+        
+        .whatWeDo .cards #nursingCare h3,
+        .whatWeDo .cards #edibles h3,
+        .whatWeDo .cards #tailoring h3  {
+            margin: 30px 0;
+        }
+
+        .serviceNurse,
+        .serviceTailoring {
+            margin: auto;
+            flex-direction: column-reverse;
+            padding: 50px 20px;
+        }
+
+        .serviceEdibles {
+            margin: auto;
+            flex-direction: column;
+            padding: 50px 20px;
+        }
+
+        #serviceNurse-text,
+        #serviceEdibles-text,
+        #serviceTailoring-text {
+            width: 100%;
+            text-align: center;
+        }
+
+        #serviceNurse-text h1,
+        #serviceEdibles-text h1,
+        #serviceTailoring-text h1 {
+            font-size: 2.5em;
+        }
+
+        #serviceNurse-text p,
+        #serviceEdibles-text p,
+        #serviceTailoring-text p {
+            padding: 30px;
+        }
+
+        #serviceNurse-image,
+        #serviceEdibles-image,
+        #serviceTailoring-image {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        #serviceNurse-image img,
+        #serviceEdibles-image img,
+        #serviceTailoring-image img {
+            width: 200px;
+            height: 200px;
+            margin: 5px;
+        }
+
+        #middle {
+            padding: 70px 20px;
+        }
+
+        #contact-h1 {
+            margin-bottom: 30px;
+        }
+        
+        #contact-list ul {
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        #contact-list ul li {
+            margin: 10px 0px;
+        }
+        
+        #contact-social ul {
+            gap: 50px;
+            margin-top: 30px;
+        }
+
+        .about-hero {
+            padding: 100px 10px;
+        }
+    
+        #about-hero-image {
+            width: 50%;
+            margin-bottom: 30px;
+        }
+    
+        #about-hero-text {
+            width: 50%;
+        }
+    
+        .vision, .mission {
+            padding: 50px;
+        }
+        
+        #contact-text {
+            width: 50%;
+            text-align: center;
+         }
+        
+         #contact-image {
+            width: 50%;
+            display: flex;
+            margin: auto;
+        }
+        
+        #contact-image img {
+            width: 100%;
+            height: 100%;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 20px;
+        }
+        
+        #form {
+            width: 100%;
+        }
+        
+        form button {
+            width: 30%;
         }
 }
