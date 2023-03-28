@@ -17,11 +17,13 @@ body {
 
 header {
     width: 100%;
+    height: 65px;
     position: fixed;
     top: 0;
 }
 
 nav {
+    height: 65px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -479,10 +481,6 @@ form button:hover {
 
 @media only screen and (max-width: 600px) {
     
-    header {
-        width: 100%;
-    }
-
     .hamburger {
         display: block;
     }
@@ -513,7 +511,7 @@ form button:hover {
         background: rgba(7, 7, 7, 0.6);
         position: fixed;
         right: -100%;
-        top: 60px;
+        top: 65px;
         gap: 0;
         flex-direction: column;
         width: 40%;
@@ -524,7 +522,7 @@ form button:hover {
     }
 
     .nav-item {
-        margin: 5px auto;
+        margin: 30px auto;
     }
 
     .nav-menu.active {
@@ -742,10 +740,6 @@ form button:hover {
 
 @media only screen and (max-width: 900px) and (min-width: 601px) {
 
-    header {
-        width: 100%;
-    }
-
     .hamburger {
         display: block;
     }
@@ -776,7 +770,7 @@ form button:hover {
         background: rgba(7, 7, 7, 0.6);
         position: fixed;
         right: -100%;
-        top: 60px;
+        top: 65px;
         gap: 0;
         flex-direction: column;
         width: 40%;
@@ -787,7 +781,7 @@ form button:hover {
     }
 
     .nav-item {
-        margin: 10px auto;
+        margin: 30px auto;
     }
 
     .nav-menu.active {
